@@ -1,0 +1,28 @@
+<h1>Hi {{vm.user.firstName}}!</h1>
+<p>You're logged in!!</p>
+<h3>All registered users:</h3>
+<ul>
+    <li ng-repeat="user in vm.allUsers">
+        {{user.CustomerName}} ({{user.CustomerID}} {{user.ProductName}} {{user.Status}}}})
+        - <a href="#" ng-click="vm.loadCurrentUser(user.CustomerID)">View</a>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<p><a href="#/login" class="btn btn-primary">Logout</a></p>
+<!--  
+
+    Home Page - (Master/Detail)
+        Master
+            List of Customers
+
+            Each List Item should have following properties shown:
+
+                Customer Name
+
+                Customer ID
+
+                Product Name
+
+                Status
+
+Search/Filter, Sorting and Refresh functionality should be available on list -->

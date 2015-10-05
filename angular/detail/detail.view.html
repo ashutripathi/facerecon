@@ -1,0 +1,107 @@
+<div class="container">
+	<h1>User detail</h1>
+
+	<form novalidate="novalidate" class="form-horizontal">
+		<div class="control-group">
+			<label class="control-label" for="inputFirstName">Customer
+				Name</label>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputLastName">Customer ID</label>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputLastName">Product Name</label>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="inputLastName">Status</label>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputLastName">Phone Number</label>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputLastName">Skype Call
+				(for desktop/mobile/tab)</label>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputLastName">phone call
+				(only for mobile)</label>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputLastName">Email
+				Address</label>
+		</div>
+
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#notes">Notes</a></li>
+			<li><a data-toggle="tab" href="#visits">Visits</a></li>
+
+		</ul>
+		<div class="tab-content">
+			<div id="notes" class="tab-pane fade in active">
+
+				<div class="form-group">
+					<label for="comment">Notes</label>
+					<textarea class="form-control" rows="5" id="comment"></textarea>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<a ng-click="" class="btn btn-small">Save Notes</a>
+					</div>
+				</div>
+			</div>
+			<div id="visits" class="tab-pane fade">
+				<h3>Visits</h3>
+				<p>Date Time Notes Action - Offer/Lead/Opportunity/New Customer.</p>
+				<div class="control-group">
+					<div class="controls">
+						<a ng-click="" class="btn btn-small btn-primary">Save
+							Visits</a>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+</form>
+</div>
+<!-- 
+
+Detail
+
+            On list item selection in Master Page, its details will appear in Details Page
+
+            Details Page should have Details Header and Tab portions.
+
+            Details Header should show following properties
+
+                Customer Name
+
+                Customer ID
+
+                Product Name
+
+                Status
+
+                Phone Number
+                    Skype Call (for desktop/mobile/tab) and phone call (only for mobile).
+                Email Address
+
+                    Send Email feature (for desktop/tab/mobile)
+                Address
+            Tab Portion
+                Notes Tab
+                    Text Area to take notes
+                    Select box to set status - (New/InProgress/OrderPlaced/Support/Cancelled/Rejected)
+                Visit Tab
+
+                    Form to set a visit to the customer
+
+                    Take following inputs
+                        Date
+                        Time
+                        Notes
+                        Action - Offer/Lead/Opportunity/New Customer.
+
+                    Sets an event in default calendar.
+
+ -->
